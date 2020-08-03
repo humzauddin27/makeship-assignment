@@ -1,0 +1,80 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  background: green;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.App {
+  height: 100%;
+  text-align: center;
+}
+
+.logo {
+  height: 30px;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  font-size: 28px;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.startScreen {
+  display: flex;
+  justify-content: space-between;
+}
+
+.startScreen p {
+  padding: 2em;
+}
+
+.startScreen p:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.failed-load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #222;
+  padding: 20px;
+  font-size: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}

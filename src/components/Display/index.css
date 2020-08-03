@@ -1,0 +1,38 @@
+img {
+  height: 200px;
+}
+
+.hints {
+  padding: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .hidden-input {
+    display: none;
+  }
+}
+
+.hidden-input {
+  position: absolute;
+  width: 1px;
+  top: -50px;
+}
+
+.types {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.types p {
+  padding: 20px;
+}
+
+.types img {
+  height: 20px;
+}
+
+.start-again-button:hover {
+  cursor: pointer;
+}
