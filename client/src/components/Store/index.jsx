@@ -96,7 +96,7 @@ class Store extends Component {
   }
 
   render() {
-    const { images, customer } = this.props;
+    const { images } = this.props;
     const { approvedList, rejectedList } = this.state;
     const status = {};
     approvedList.map(app => {
