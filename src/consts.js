@@ -1,4 +1,4 @@
 export const API_URL =
   process.env.NODE_ENV === "production"
-    ? "https://humzas-image-viewer-backend.herokuapp.com/"
+    ? "https://humzas-image-viewer-backend.herokuapp.com"
     : "http://localhost:8080";
