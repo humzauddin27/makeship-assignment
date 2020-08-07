@@ -5,7 +5,7 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   height: 100%;
-  background: green;
+  background: rgb(237, 238, 230);
   color: black;
   letter-spacing: 1px;
 }
@@ -21,11 +21,25 @@ body {
 
 .App-header {
   display: flex;
-  flex-direction: column;
-  background-color: #222;
+  justify-content: flex-start;
+  background-color: rgb(44, 44, 44);
   color: white;
   padding: 20px;
   font-size: 28px;
+}
+
+.userDetails {
+  margin-left: auto;
+}
+
+.userDetails p {
+  font-size: 14px;
+  margin: 1px;
+}
+
+.changeUser:hover {
+  cursor: pointer;
+  color: rgb(153, 153, 153);
 }
 
 .body {
@@ -44,10 +58,13 @@ body {
 .startScreen {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .startScreen p {
   padding: 2em;
+  background-color: rgb(212, 212, 212);
+  border-radius: 20px;
 }
 
 .startScreen p:hover {

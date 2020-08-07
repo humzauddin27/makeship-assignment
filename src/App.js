@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import axios from "axios";
 import Display from "./components/Display";
 import "./App.css";
 
@@ -16,6 +15,7 @@ class App extends Component {
   renderStartScreen() {
     return (
       <div className="startScreen">
+        <h3> I am logging in as a ... </h3>
         <p onClick={() => this.setCustomer(true)} className="customer">
           Customer
         </p>
@@ -35,17 +35,18 @@ class App extends Component {
         </div>
       );
     }
-    /* 
-    At the beginning, we ask if you want to be a customer or a seller.
-      Display will be the store (customer, can make comments only)
-      
-      Store will have all the functionalities of above, but extra button to upload
-        That upload will create new tiles/items on the server.
-    */
     return (
       <div className="App">
         <header className="App-header">
           <div>Gimage</div>
+          {customer !== null ? (
+            <div className="userDetails">
+              <p> {customer ? "Customer" : "Seller"} </p>
+              <p className="changeUser" onClick={() => this.setCustomer(null)}>
+                Change user
+              </p>
+            </div>
+          ) : null}
         </header>
         <div className="body">
           {customer === null ? (

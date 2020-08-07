@@ -1,0 +1,51 @@
+.images {
+  display: flex;
+  justify-content: center;
+}
+
+.mainImg {
+  padding: 20px;
+  max-width: 275px;
+  overflow: auto;
+}
+
+.mainImg img {
+  height: 15em;
+}
+
+.carousel {
+  padding: 20px;
+  display: flex;
+  flex-flow: column wrap;
+  height: 15em;
+  width: 5em;
+}
+
+.carousel img {
+  height: 5em;
+  width: 5em;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 100px;
+}
+
+.choices div {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.choices div:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.approve {
+  background-color: rgb(82, 189, 90);
+}
+
+.reject {
+  background-color: rgb(189, 82, 82);
+}

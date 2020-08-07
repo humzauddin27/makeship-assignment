@@ -1,0 +1,42 @@
+.input {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.input input {
+  width: 100%;
+  padding: 5px;
+}
+
+.input div {
+  padding: 5px;
+  margin-left: 5px;
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(44, 44, 44);
+}
+
+.input div:hover {
+  cursor: pointer;
+  color: rgb(153, 153, 153);
+}
+
+.comments {
+  padding: 10px;
+  text-align: left;
+  background-color: white;
+  border-radius: 5px;
+  border: black 1px solid;
+  margin-top: 10px;
+  max-width: 400px;
+  max-height: 150px;
+  overflow: auto;
+}
+
+.comments div {
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
+  background-color: rgb(240, 240, 240);
+}
