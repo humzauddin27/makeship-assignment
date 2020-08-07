@@ -29,7 +29,7 @@
 .choices {
   display: flex;
   justify-content: space-evenly;
-  margin: 10px 100px;
+  margin: 10px;
 }
 
 .choices div {
@@ -48,4 +48,12 @@
 
 .reject {
   background-color: rgb(189, 82, 82);
+}
+
+.approved {
+  color: rgb(82, 189, 90);
+}
+
+.rejected {
+  color: rgb(189, 82, 82);
 }

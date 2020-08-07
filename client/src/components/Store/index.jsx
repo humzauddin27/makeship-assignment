@@ -79,7 +79,11 @@ class Store extends Component {
     const imageUrl = this.props.images[this.state.currImage];
 
     if (statusList[imageUrl] || statusList[imageUrl] === false) {
-      return statusList[imageUrl] ? "Approved" : "Rejected";
+      return statusList[imageUrl] ? (
+        <p className="approved"> Approved </p>
+      ) : (
+        <p className="rejected"> Rejected </p>
+      );
     } else if (!this.props.customer) {
       return;
     }
